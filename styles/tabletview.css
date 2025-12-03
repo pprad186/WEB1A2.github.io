@@ -1,0 +1,46 @@
+@media screen and (min-width: 591px) and (max-width: 790px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.2rem;
+    }
+
+    header nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* BANNER */
+    .banner {
+        padding: 3rem 1.5rem;
+    }
+
+    /* PRODUCTS – 2×2 grid */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
+
+    /* WHY */
+    .why {
+        padding: 2rem 3rem;
+    }
+
+    /* ABOUT PAGE */
+    .story, .values, .journey {
+        padding: 2rem 3rem;
+    }
+
+    /* DETAILS GRID */
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* CONTACT PAGE */
+    .contact-form {
+        padding: 2rem 3rem;
+    }
+}

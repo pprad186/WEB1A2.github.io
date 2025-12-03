@@ -1,0 +1,298 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(29, 29, 84);
+    color: #fff;
+    padding: 1rem 2rem;
+}
+img[src*="logo"]{
+    width: 100px;
+    height: 50px;
+}
+header nav {
+    display: flex;
+    gap: 1rem;
+}
+header nav a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+header nav a:hover {
+    color: #00aaff;
+}
+header nav a.active{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #2935a0; 
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #0077cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.btn:hover {
+    background: #005fa3;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    color: white;
+    padding: 4rem 2rem;
+    background-image: url(../images/closet.jpg); 
+    /* Image from: https://imgs.search.brave.com/2uw-K9g50HKwBPk6zbpimValHE92F8qve0_ocBTvb18/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMud2ZjZG4uY29t/L2ltLzQ5NDEwODM4/L3Jlc2l6ZS1oNDAw/LXc0MDBeY29tcHIt/cjg1LzM2NTEvMzY1/MTEyOTI2L1RhbGwr/Qm9vdHMrUmFjaytP/cmdhbml6ZXIsK0Jv/b3QrT3JnYW5pemVy/K2ZvcitDbG9zZXQu/anBn */
+    background-size: cover; 
+    background-repeat: no-repeat, repeat
+}
+.banner h1 {
+    font-size: 2rem;
+}
+.banner .btn {
+    margin-top: 1rem;
+}
+
+/* Products */
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s ease;
+}
+.product:hover {
+    transform: translateY(-5px);
+}
+.product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.product p {
+    color: #cc1010;
+    font-weight: bold;
+}
+
+/* Why */
+.why {
+    padding: 3rem 6rem;
+    background: #fafafa;
+    text-align: center ;
+}
+.why p::first-letter {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.float-right {
+    float: right;
+    margin: 10px 0 10px 20px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* About Page */
+.about-head {
+    text-align: center;
+    background-color: #e8e8e8;
+    padding: 4rem 2rem;
+}
+.story, .values, .journey {
+    padding: 3rem 6rem;
+    text-align: center;
+}
+.story h2{
+    text-align: center;
+}
+.story{
+    text-align: justify;
+}
+figure img{
+    width: 100%; 
+    border: 1px solid #ddd;
+}
+figure figcaption{
+    text-align: center;
+    color: black;
+    margin-top: 0.5rem;
+}
+
+/* Details */ 
+.details { 
+    margin: 20px 40px; 
+} 
+.details h2 { 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+.values-grid, .details-grid {
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+}
+.values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: center;
+}
+.values-grid img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.details-grid {
+    grid-template-columns: 200px 1fr;
+    padding: 1rem;
+    font-weight: bolder;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #61a6ce;
+}
+.details-grid div {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+}
+.details-grid div:nth-child(odd) {
+    font-weight: bold;
+}
+.details-grid div:last-child,
+.details-grid div:nth-last-child(2) {
+    border-bottom: none;
+}
+
+
+/* Journey */
+.journey ul{
+    text-align: left;
+    list-style: none;
+}
+.journey ul li{
+    padding: 10px;
+    background : url("../images/journey.jpg") no-repeat left center;
+    background-size: 24px;
+    padding-left: 40px;
+}
+
+/* CONTACT PAGE */
+.contact-head {
+    text-align: center;
+    background-color: #e8e8e8;
+    padding: 4rem 2rem;
+}
+.contact-form {
+    padding: 2rem 6rem;
+    background: #ffffff;
+    text-align: left ;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem 2rem;
+    margin-top: 2rem;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group.full {
+    grid-column: 1 / -1;
+}
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.form-group input,
+.form-group textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.options {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+.form-actions {
+    display: flex;
+    gap: 1rem;
+}
+.form-actions .btn {
+    padding: 0.7rem 1.4rem;
+}
+/* Reset button */
+.form-actions .reset {
+    background: #666;
+}
+.form-actions .reset:hover {
+    background: #444;
+}
+
+
+/* Footer */
+footer {
+    background: rgb(29, 29, 84);;
+    color: #fff;
+    padding: 2rem 10rem;
+    text-align: center;
+}
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+.footer-cols {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.footer-cols h4 {
+    margin-bottom: 0.5rem;
+}
+.footer-cols ul {
+    list-style: none;
+}
+.footer-cols li {
+    margin: 0.5rem 0;
+}

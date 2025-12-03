@@ -1,0 +1,61 @@
+@media screen and (max-width: 590px) {
+
+    /* HEADER */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    /* BANNER */
+    .banner {
+        padding: 2rem 1rem;
+    }
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    /* PRODUCTS – 1 column */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* WHY */
+    .why {
+        padding: 2rem 1rem;
+    }
+    .float-right {
+        float: none;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+
+    /* ABOUT PAGE */
+    .story, .values, .journey {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    /* CONTACT PAGE */
+    .contact-form {
+        padding: 1rem;
+    }
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 1rem;
+    }
+    .footer-cols {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}
