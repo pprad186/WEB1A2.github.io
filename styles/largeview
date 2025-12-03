@@ -1,0 +1,43 @@
+@media screen and (min-width: 791px) {
+
+    /* Body background stays fluid */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #e5e7f1; /* or your chosen color */
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        width: 790px;
+        background: white;
+        min-height: 100vh;
+    }
+
+    /* Prevent elements from escaping the container */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(29, 29, 84);
+        color: #fff;
+        padding: 1rem 2rem;
+    }
+
+    footer {
+        background: rgb(29, 29, 84);;
+        color: #fff;
+        padding: 2rem 10rem;
+        text-align: center;
+    }
+    /* PRODUCTS – 2×2 grid */
+    .product-grid {
+        width: 100%;
+    }
+
+    /* BANNER */
+    .banner {
+        padding: 4rem 2rem;
+    }
+}
